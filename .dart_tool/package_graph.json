@@ -59,20 +59,6 @@
       "dependencies": []
     },
     {
-      "name": "device_info_plus",
-      "version": "9.1.0",
-      "dependencies": [
-        "device_info_plus_platform_interface",
-        "ffi",
-        "file",
-        "flutter",
-        "flutter_web_plugins",
-        "meta",
-        "win32",
-        "win32_registry"
-      ]
-    },
-    {
       "name": "i18n_extension",
       "version": "15.1.0",
       "dependencies": [
@@ -259,40 +245,95 @@
       ]
     },
     {
-      "name": "win32_registry",
-      "version": "1.1.2",
+      "name": "async",
+      "version": "2.11.0",
       "dependencies": [
-        "ffi",
-        "win32"
+        "collection",
+        "meta"
       ]
     },
     {
-      "name": "win32",
-      "version": "5.1.0",
+      "name": "leak_tracker_testing",
+      "version": "3.0.2",
       "dependencies": [
-        "ffi"
+        "leak_tracker",
+        "matcher",
+        "meta"
       ]
     },
     {
-      "name": "file",
-      "version": "7.0.0",
+      "name": "leak_tracker",
+      "version": "11.0.2",
       "dependencies": [
+        "clock",
+        "collection",
         "meta",
-        "path"
+        "path",
+        "vm_service"
       ]
     },
     {
-      "name": "ffi",
-      "version": "2.1.0",
+      "name": "term_glyph",
+      "version": "1.2.1",
       "dependencies": []
     },
     {
-      "name": "device_info_plus_platform_interface",
-      "version": "7.0.0",
+      "name": "string_scanner",
+      "version": "1.2.0",
+      "dependencies": [
+        "source_span"
+      ]
+    },
+    {
+      "name": "source_span",
+      "version": "1.10.0",
+      "dependencies": [
+        "collection",
+        "path",
+        "term_glyph"
+      ]
+    },
+    {
+      "name": "boolean_selector",
+      "version": "2.1.1",
+      "dependencies": [
+        "source_span",
+        "string_scanner"
+      ]
+    },
+    {
+      "name": "gettext_parser",
+      "version": "0.2.0",
+      "dependencies": []
+    },
+    {
+      "name": "shared_preferences",
+      "version": "2.5.3",
       "dependencies": [
         "flutter",
+        "shared_preferences_android",
+        "shared_preferences_foundation",
+        "shared_preferences_linux",
+        "shared_preferences_platform_interface",
+        "shared_preferences_web",
+        "shared_preferences_windows"
+      ]
+    },
+    {
+      "name": "http",
+      "version": "1.6.0",
+      "dependencies": [
+        "async",
+        "http_parser",
         "meta",
-        "plugin_platform_interface"
+        "web"
+      ]
+    },
+    {
+      "name": "i18n_extension_core",
+      "version": "5.0.2",
+      "dependencies": [
+        "sprintf"
       ]
     },
     {
@@ -303,11 +344,6 @@
         "meta",
         "path"
       ]
-    },
-    {
-      "name": "gettext_parser",
-      "version": "0.2.0",
-      "dependencies": []
     },
     {
       "name": "url_launcher_windows",
@@ -438,120 +474,9 @@
       ]
     },
     {
-      "name": "async",
-      "version": "2.11.0",
-      "dependencies": [
-        "collection",
-        "meta"
-      ]
-    },
-    {
-      "name": "leak_tracker_testing",
-      "version": "3.0.2",
-      "dependencies": [
-        "leak_tracker",
-        "matcher",
-        "meta"
-      ]
-    },
-    {
-      "name": "term_glyph",
-      "version": "1.2.1",
-      "dependencies": []
-    },
-    {
-      "name": "string_scanner",
-      "version": "1.2.0",
-      "dependencies": [
-        "source_span"
-      ]
-    },
-    {
-      "name": "source_span",
-      "version": "1.10.0",
-      "dependencies": [
-        "collection",
-        "path",
-        "term_glyph"
-      ]
-    },
-    {
-      "name": "boolean_selector",
-      "version": "2.1.1",
-      "dependencies": [
-        "source_span",
-        "string_scanner"
-      ]
-    },
-    {
-      "name": "plugin_platform_interface",
-      "version": "2.1.7",
-      "dependencies": [
-        "meta"
-      ]
-    },
-    {
-      "name": "typed_data",
-      "version": "1.4.0",
-      "dependencies": [
-        "collection"
-      ]
-    },
-    {
-      "name": "leak_tracker",
-      "version": "11.0.2",
-      "dependencies": [
-        "clock",
-        "collection",
-        "meta",
-        "path",
-        "vm_service"
-      ]
-    },
-    {
       "name": "vm_service",
       "version": "14.2.5",
       "dependencies": []
-    },
-    {
-      "name": "i18n_extension_core",
-      "version": "5.0.2",
-      "dependencies": [
-        "sprintf"
-      ]
-    },
-    {
-      "name": "http",
-      "version": "1.6.0",
-      "dependencies": [
-        "async",
-        "http_parser",
-        "meta",
-        "web"
-      ]
-    },
-    {
-      "name": "http_parser",
-      "version": "4.1.2",
-      "dependencies": [
-        "collection",
-        "source_span",
-        "string_scanner",
-        "typed_data"
-      ]
-    },
-    {
-      "name": "shared_preferences",
-      "version": "2.5.3",
-      "dependencies": [
-        "flutter",
-        "shared_preferences_android",
-        "shared_preferences_foundation",
-        "shared_preferences_linux",
-        "shared_preferences_platform_interface",
-        "shared_preferences_web",
-        "shared_preferences_windows"
-      ]
     },
     {
       "name": "shared_preferences_windows",
@@ -563,6 +488,16 @@
         "path_provider_platform_interface",
         "path_provider_windows",
         "shared_preferences_platform_interface"
+      ]
+    },
+    {
+      "name": "shared_preferences_web",
+      "version": "2.4.3",
+      "dependencies": [
+        "flutter",
+        "flutter_web_plugins",
+        "shared_preferences_platform_interface",
+        "web"
       ]
     },
     {
@@ -586,21 +521,53 @@
       ]
     },
     {
-      "name": "shared_preferences_web",
-      "version": "2.4.3",
-      "dependencies": [
-        "flutter",
-        "flutter_web_plugins",
-        "shared_preferences_platform_interface",
-        "web"
-      ]
-    },
-    {
       "name": "shared_preferences_foundation",
       "version": "2.5.6",
       "dependencies": [
         "flutter",
         "shared_preferences_platform_interface"
+      ]
+    },
+    {
+      "name": "shared_preferences_android",
+      "version": "2.4.16",
+      "dependencies": [
+        "flutter",
+        "shared_preferences_platform_interface"
+      ]
+    },
+    {
+      "name": "http_parser",
+      "version": "4.1.2",
+      "dependencies": [
+        "collection",
+        "source_span",
+        "string_scanner",
+        "typed_data"
+      ]
+    },
+    {
+      "name": "plugin_platform_interface",
+      "version": "2.1.7",
+      "dependencies": [
+        "meta"
+      ]
+    },
+    {
+      "name": "typed_data",
+      "version": "1.4.0",
+      "dependencies": [
+        "collection"
+      ]
+    },
+    {
+      "name": "path_provider_windows",
+      "version": "2.3.0",
+      "dependencies": [
+        "ffi",
+        "flutter",
+        "path",
+        "path_provider_platform_interface"
       ]
     },
     {
@@ -610,6 +577,14 @@
         "flutter",
         "platform",
         "plugin_platform_interface"
+      ]
+    },
+    {
+      "name": "file",
+      "version": "7.0.0",
+      "dependencies": [
+        "meta",
+        "path"
       ]
     },
     {
@@ -624,6 +599,14 @@
       ]
     },
     {
+      "name": "win32_registry",
+      "version": "1.1.2",
+      "dependencies": [
+        "ffi",
+        "win32"
+      ]
+    },
+    {
       "name": "xdg_directories",
       "version": "1.1.0",
       "dependencies": [
@@ -632,21 +615,39 @@
       ]
     },
     {
-      "name": "shared_preferences_android",
-      "version": "2.4.16",
+      "name": "ffi",
+      "version": "2.1.4",
+      "dependencies": []
+    },
+    {
+      "name": "device_info_plus",
+      "version": "11.3.0",
       "dependencies": [
+        "device_info_plus_platform_interface",
+        "ffi",
+        "file",
         "flutter",
-        "shared_preferences_platform_interface"
+        "flutter_web_plugins",
+        "meta",
+        "web",
+        "win32",
+        "win32_registry"
       ]
     },
     {
-      "name": "path_provider_windows",
-      "version": "2.3.0",
+      "name": "device_info_plus_platform_interface",
+      "version": "7.0.2",
       "dependencies": [
-        "ffi",
         "flutter",
-        "path",
-        "path_provider_platform_interface"
+        "meta",
+        "plugin_platform_interface"
+      ]
+    },
+    {
+      "name": "win32",
+      "version": "5.15.0",
+      "dependencies": [
+        "ffi"
       ]
     }
   ],

@@ -1,0 +1,61 @@
+Flutter crash report.
+Please report a bug at https://github.com/flutter/flutter/issues.
+
+## command
+
+flutter widget-preview start --machine --web-server --dtd-url ws://127.0.0.1:58266/uBwwP85tLBI= --devtools-server-address http://127.0.0.1:9101/
+
+## exception
+
+_TypeError: Null check operator used on a null value
+
+```
+#0      PreviewManifest.updatePubspecHash (package:flutter_tools/src/widget_preview/preview_manifest.dart:145:64)
+#1      PreviewPubspecBuilder.populatePreviewPubspec (package:flutter_tools/src/widget_preview/preview_pubspec_builder.dart:174:21)
+<asynchronous suspension>
+```
+
+## flutter doctor
+
+```
+[✓] Flutter (Channel stable, 3.38.1, on Microsoft Windows [Version 10.0.22621.4317], locale en-US) [464ms]
+    • Flutter version 3.38.1 on channel stable at C:\flutter
+    • Upstream repository https://github.com/flutter/flutter.git
+    • Framework revision b45fa18946 (8 days ago), 2025-11-12 22:09:06 -0600
+    • Engine revision b5990e5ccc
+    • Dart version 3.10.0
+    • DevTools version 2.51.1
+    • Feature flags: enable-web, enable-linux-desktop, enable-macos-desktop, enable-windows-desktop, enable-android, enable-ios, cli-animations, enable-native-assets, omit-legacy-version-file, enable-lldb-debugging
+
+[✓] Windows Version (11 Pro 64-bit, 22H2, 2009) [9.5s]
+
+[✓] Android toolchain - develop for Android devices (Android SDK version 36.1.0) [7.5s]
+    • Android SDK at C:\Users\admin\AppData\Local\Android\sdk
+    • Emulator version 36.2.12.0 (build_id 14214601) (CL:N/A)
+    • Platform android-36, build-tools 36.1.0
+    • Java binary at: C:\Program Files\Android\Android Studio\jbr\bin\java
+      This is the JDK bundled with the latest Android Studio installation on this machine.
+      To manually set the JDK path, use: `flutter config --jdk-dir="path/to/jdk"`.
+    • Java version OpenJDK Runtime Environment (build 21.0.5+-13047016-b750.29)
+    • All Android licenses accepted.
+
+[✓] Chrome - develop for the web [11ms]
+    • Chrome at C:\Program Files\Google\Chrome\Application\chrome.exe
+
+[✗] Visual Studio - develop Windows apps [9ms]
+    ✗ Visual Studio not installed; this is necessary to develop Windows apps.
+      Download at https://visualstudio.microsoft.com/downloads/.
+      Please install the "Desktop development with C++" workload, including all of its default components
+
+[✓] Connected device (5 available) [1,196ms]
+    • CPH2251 (wireless) (mobile)  • adb-KBYTZTXOOJAUXG4P-UY6a1t._adb-tls-connect._tcp • android-arm64  • Android 13 (API 33)
+    • sdk gphone64 x86 64 (mobile) • emulator-5554                                     • android-x64    • Android 16 (API 36) (emulator)
+    • Windows (desktop)            • windows                                           • windows-x64    • Microsoft Windows [Version 10.0.22621.4317]
+    • Chrome (web)                 • chrome                                            • web-javascript • Google Chrome 142.0.7444.176
+    • Edge (web)                   • edge                                              • web-javascript • Microsoft Edge 142.0.3595.80
+
+[✓] Network resources [583ms]
+    • All expected network resources are available.
+
+! Doctor found issues in 1 category.
+```
